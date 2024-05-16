@@ -27,13 +27,7 @@
 
 .header__links-list-item {
   list-style: circle;
-}
-
-.address-tel,
-.address-mail,
-.header__link {
-  text-decoration: none;
-  border-bottom: 1px solid black;
+  letter-spacing: 0.02px;
 }
 
 .header__link_active {
@@ -49,6 +43,7 @@
 }
 
 .address {
+  font-size: 17px;
   font-style: normal;
   line-height: 25px;
   text-decoration: none;
@@ -56,7 +51,17 @@
 
 .header__address {
   width: 240px;
-  height: 98px;
+  padding-top: 5px;
+  letter-spacing: 0.6px;
+}
+
+.header__address p {
+  padding-right: 20px;
+}
+
+.address-link,
+.header__link {
+  text-underline-offset: 4px;
 }
 
 .header__links-list-item_no-bullit,
@@ -149,8 +154,9 @@
 .bet-button {
   padding: 12px 32px 11px 31px;
   line-height: 26px;
+  font-family: Raleway, sans-serif;
   font-weight: 500;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   background-color: transparent;
   z-index: 1;
 }
@@ -158,7 +164,7 @@
 /*----->> LOTS*/
 
 .lots {
-  padding: 179px 24px 146px;
+  padding: 180px 24px 144px;
 }
 
 .lots__heading {
@@ -181,7 +187,6 @@
   display: flex;
   flex-grow: 1;
   width: 334px;
-  height: 563px;
 }
 
 .card-link {
@@ -194,12 +199,13 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding: 51px 40px 48px;
+  padding: 50px 40px 45px;
   color: #fff;
   z-index: 1;
 }
 
 .card__title {
+  /* padding-bottom: 3px; */
   font-size: 22px;
   line-height: 27px;
   font-weight: 700;
@@ -226,9 +232,7 @@
 }
 
 .cover,
-.card_type_film,
-.card_type_book,
-.card_type_picture {
+.lots__card-list-item {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -266,7 +270,7 @@
 
 .about__title {
   padding-bottom: 100px;
-  padding-top: 100px;
+  padding-top: 101px;
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
@@ -296,9 +300,9 @@ footer {
 
 .footer__address {
   padding-right: 30px;
-  width: 240px;
-  height: 98px;
-  letter-spacing: 1px;
+  padding-left: 2px;
+  width: 245px;
+  font-size: 18px;
 }
 
 .footer__menu {
@@ -312,6 +316,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 1px;
+  padding-right: 2px;
 }
 
 .footer__menu-list-item {
